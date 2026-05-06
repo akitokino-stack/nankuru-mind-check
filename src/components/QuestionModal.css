@@ -1,0 +1,184 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 16px;
+  backdrop-filter: blur(4px);
+}
+
+.modal-content {
+  background-color: white;
+  width: 100%;
+  max-width: 400px;
+  border-radius: var(--radius-lg);
+  padding: 32px 24px;
+  position: relative;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  animation: slideUp 0.3s ease-out;
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.close-btn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 6px;
+  background-color: #f0f0f0;
+  border-radius: 3px;
+  margin-bottom: 32px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: var(--gradient-primary);
+  border-radius: 3px;
+  transition: width 0.3s ease;
+}
+
+.question-text {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-text-main);
+  text-align: center;
+  margin-bottom: 40px;
+  line-height: 1.5;
+}
+
+.answer-buttons {
+  display: flex;
+  gap: 16px;
+}
+
+.answer-btn {
+  flex: 1;
+  padding: 14px;
+  border-radius: var(--radius-md);
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: 2px solid transparent;
+}
+
+.answer-btn.yes {
+  background-color: #e6f3fa;
+  color: #5ba4cc;
+}
+
+.answer-btn.yes:hover {
+  background-color: #d8edf8;
+}
+
+.answer-btn.no {
+  background-color: #f7fafc;
+  color: #a0aec0;
+}
+
+.answer-btn.no:hover {
+  background-color: #edf2f7;
+}
+
+.note-textarea {
+  width: 100%;
+  padding: 16px;
+  border: 1px solid #e2e8f0;
+  border-radius: var(--radius-md);
+  font-family: inherit;
+  font-size: 0.95rem;
+  color: var(--color-text-main);
+  resize: none;
+  margin-bottom: 24px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.note-textarea:focus {
+  border-color: #5ba4cc;
+}
+
+.answer-btn.complete {
+  background: var(--gradient-primary);
+  color: white;
+  box-shadow: 0 4px 12px rgba(91, 164, 204, 0.3);
+}
+
+.answer-btn.complete:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(91, 164, 204, 0.4);
+}
+
+.back-btn {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background-color 0.2s;
+}
+
+.back-btn:hover {
+  background-color: #f7fafc;
+}
+
+.date-picker-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.date-label {
+  font-size: 0.85rem;
+  color: #718096;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.date-input {
+  padding: 10px 16px;
+  border: 1px solid #e2e8f0;
+  border-radius: var(--radius-md);
+  font-size: 1rem;
+  color: var(--color-text-main);
+  background-color: #ffffff;
+  cursor: pointer;
+  outline: none;
+  font-family: inherit;
+  transition: all 0.2s;
+}
+
+.date-input:hover {
+  border-color: #5ba4cc;
+  background-color: #f7fafc;
+}
+
+.date-input:focus {
+  border-color: #5ba4cc;
+  box-shadow: 0 0 0 3px rgba(91, 164, 204, 0.1);
+}

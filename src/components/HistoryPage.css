@@ -1,0 +1,122 @@
+.history-page {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  overflow-y: auto;
+}
+
+.history-page-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-text-main);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.history-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.history-card {
+  background: white;
+  border-radius: var(--radius-lg);
+  padding: 20px;
+  box-shadow: var(--shadow-soft);
+}
+
+.history-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  border-bottom: 1px solid #edf2f7;
+  padding-bottom: 12px;
+}
+
+.history-date {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #4a5568;
+}
+
+.history-score-badge {
+  background-color: #f7fafc;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #718096;
+}
+
+.score-val {
+  color: #2c4a63;
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-left: 4px;
+}
+
+.history-card-body {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.history-emotion-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.history-details {
+  flex: 1;
+}
+
+.history-emotion-name {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--color-text-main);
+  margin-bottom: 6px;
+}
+
+.emotion-name-en {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--color-text-muted);
+}
+
+.history-notes {
+  font-size: 0.85rem;
+  color: #4a5568;
+  line-height: 1.5;
+}
+
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  background: white;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-soft);
+  text-align: center;
+  color: #718096;
+}
+
+.empty-state p {
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+
+.empty-state p:first-child {
+  font-weight: 700;
+  color: #4a5568;
+  font-size: 1.1rem;
+}

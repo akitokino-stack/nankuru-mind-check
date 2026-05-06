@@ -1,0 +1,20 @@
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 16px;
+  gap: 12px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2c4a63; /* Darker blue color for title */
+  letter-spacing: 0.5px;
+}

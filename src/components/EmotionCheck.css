@@ -1,0 +1,86 @@
+.emotion-card {
+  background: white;
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  margin: 0 16px 16px 16px;
+  box-shadow: var(--shadow-soft);
+}
+
+.section-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--color-text-main);
+  margin-bottom: 20px;
+}
+
+.emotion-grid {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.emotion-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.emotion-item:hover {
+  transform: translateY(-2px);
+}
+
+.emotion-icon-bg {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 2px solid transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+  transition: all 0.3s ease;
+}
+
+.emotion-item.selected .emotion-icon-bg {
+  background-color: #e6f3fa;
+  border-color: #5ba4cc;
+  box-shadow: inset 0 0 10px rgba(91, 164, 204, 0.2);
+}
+
+.emotion-label-en {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--color-text-main);
+}
+
+.emotion-label-jp {
+  font-size: 0.65rem;
+  color: var(--color-text-muted);
+  margin-top: 2px;
+}
+
+.primary-button {
+  width: 100%;
+  background: var(--gradient-primary);
+  color: white;
+  border: none;
+  border-radius: var(--radius-pill);
+  padding: 16px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(91, 164, 204, 0.3);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.primary-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(91, 164, 204, 0.4);
+}
+
+.primary-button:active {
+  transform: translateY(0);
+}

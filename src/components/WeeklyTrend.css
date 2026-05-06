@@ -1,0 +1,56 @@
+.trend-card {
+  background: white;
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  margin: 0 16px 16px 16px;
+  box-shadow: var(--shadow-soft);
+}
+
+.trend-graph-container {
+  width: 100%;
+  height: 160px; /* Increased height slightly for real chart */
+  margin-top: 16px;
+  border-radius: 8px;
+  position: relative;
+}
+
+/* Tooltip styles */
+.custom-tooltip {
+  background-color: rgba(255, 255, 255, 0.95);
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 8px 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.tooltip-date {
+  font-size: 0.75rem;
+  color: #718096;
+  margin-bottom: 4px;
+}
+
+.tooltip-score {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #4a5568;
+}
+
+.tooltip-val {
+  color: #5ba4cc;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.empty-graph-state {
+  height: 100%;
+  border: 1px dashed #e2e8f0;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #a0aec0;
+  font-size: 0.85rem;
+  text-align: center;
+  padding: 0 20px;
+  background-color: #fcfcfc;
+}

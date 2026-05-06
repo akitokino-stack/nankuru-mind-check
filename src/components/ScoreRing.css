@@ -1,0 +1,56 @@
+.score-ring-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 16px 0 32px 0;
+}
+
+.score-ring-wrapper {
+  position: relative;
+  width: 160px;
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.score-ring-svg {
+  transform: rotate(-90deg); /* Start progress from the top */
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.score-ring-progress {
+  transition: stroke-dashoffset 1s ease-in-out;
+}
+
+.score-ring-text {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+}
+
+.score-value {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #2d3748;
+  line-height: 1;
+}
+
+.score-total {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #718096;
+  margin-left: 4px;
+}
+
+.score-label {
+  margin-top: 16px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #4a5568;
+}

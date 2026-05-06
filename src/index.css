@@ -1,0 +1,67 @@
+:root {
+  /* Colors */
+  --color-bg-top: #cbe6f7;
+  --color-bg-bottom: #fedac9;
+  --color-surface: #ffffff;
+  --color-text-main: #2d3748;
+  --color-text-muted: #718096;
+  
+  /* Gradients */
+  --gradient-bg: linear-gradient(160deg, var(--color-bg-top) 0%, var(--color-surface) 40%, var(--color-bg-bottom) 100%);
+  --gradient-primary: linear-gradient(90deg, #95cbe1 0%, #f6b595 100%);
+  
+  /* Shadows */
+  --shadow-soft: 0 4px 20px rgba(0, 0, 0, 0.05);
+  
+  /* Border Radius */
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-pill: 9999px;
+  
+  /* Typography */
+  --font-family-base: 'Noto Sans JP', 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* Reset and basic setup */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family-base);
+  line-height: 1.5;
+  font-weight: 400;
+  color: var(--color-text-main);
+  background: var(--gradient-bg);
+  background-attachment: fixed;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+/* Mobile-first Layout */
+.app-container {
+  width: 100%;
+  max-width: 480px;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+  padding-bottom: 90px; /* Space for BottomNav */
+  display: flex;
+  flex-direction: column;
+}
+
