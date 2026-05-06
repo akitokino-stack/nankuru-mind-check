@@ -230,7 +230,7 @@ const GuardianDiagnosis = () => {
           <div className="cta-box">
             <h4>心もふところも豊かになる、心の安全基地。<br/>『なんくる心サロン』</h4>
             <p>心理学と新しい時代のツールを使って、あなたの優しさを価値に変える場所です。いちゃりばちょーでー（一度会えば兄弟）、優しい仲間が待っていますよ。</p>
-            <a href="#" className="btn-primary cta-btn">
+            <a href="https://lzsubckt.gensparkspace.com/" target="_blank" rel="noopener noreferrer" className="btn-primary cta-btn">
               月額2,000円〜で、サロンの仲間になる
             </a>
           </div>
