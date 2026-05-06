@@ -77,25 +77,7 @@ const GuardianDiagnosis = () => {
   const [screen, setScreen] = useState(1);
   const [qIndex, setQIndex] = useState(0);
   const [scores, setScores] = useState({ ishiganto: 0, gajumaru: 0, shisa: 0, kame: 0, kijimuna: 0 });
-  const [popupText, setPopupText] = useState("");
   const [finalGuardian, setFinalGuardian] = useState(null);
-
-  // Random popup effect on question screen
-  useEffect(() => {
-    if (screen === 2) {
-      const showRandomPopup = () => {
-        const text = popups[Math.floor(Math.random() * popups.length)];
-        setPopupText(text);
-        
-        setTimeout(() => {
-          setPopupText("");
-        }, 3000);
-      };
-      
-      const interval = setInterval(showRandomPopup, 5000);
-      return () => clearInterval(interval);
-    }
-  }, [screen]);
 
   // Loading screen logic
   useEffect(() => {
@@ -179,11 +161,6 @@ const GuardianDiagnosis = () => {
             </button>
           ))}
         </div>
-      </div>
-
-      {/* Popup */}
-      <div className={`popup-message ${popupText ? 'visible' : ''}`}>
-        {popupText}
       </div>
     </div>
   );
