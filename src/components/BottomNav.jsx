@@ -1,10 +1,11 @@
 import React from 'react';
 import './BottomNav.css';
-import { Home, History, Search, User } from 'lucide-react';
+import { Home, History, Search, User, Sparkles } from 'lucide-react';
 
 const navItems = [
   { id: 'home', icon: Home, label: 'ホーム' },
   { id: 'history', icon: History, label: '履歴' },
+  { id: 'guardian', icon: Sparkles, label: '診断' },
   { id: 'insight', icon: Search, label: '洞察' },
   { id: 'profile', icon: User, label: 'プロフィール' },
 ];

@@ -8,6 +8,7 @@ import QuestionModal from './components/QuestionModal';
 import HistoryPage from './components/HistoryPage';
 import InsightPage from './components/InsightPage';
 import ProfilePage from './components/ProfilePage';
+import GuardianDiagnosis from './components/GuardianDiagnosis';
 
 function App() {
   const [activeTab, setActiveTab] = useState('home');
@@ -75,6 +76,8 @@ function App() {
         return <HistoryPage history={history} />;
       case 'insight':
         return <InsightPage history={history} />;
+      case 'guardian':
+        return <GuardianDiagnosis />;
       case 'profile':
         return <ProfilePage />;
       default:
