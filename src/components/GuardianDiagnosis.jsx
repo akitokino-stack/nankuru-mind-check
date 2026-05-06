@@ -139,7 +139,7 @@ const GuardianDiagnosis = () => {
   const renderScreen1 = () => (
     <div className="guardian-screen top-screen fade-in">
       <div className="top-hero">
-        <img src="/guardian-top.jpg" alt="なんくる守護神たち" className="top-hero-image" />
+        <img src="/guardian-top.png" alt="なんくる守護神たち" className="top-hero-image" />
         <h1 className="hero-title">
           <span className="subtitle">あなたの「優しさ」は才能だった！</span>
           心の扉をひらく<br />『なんくる守護神』診断
