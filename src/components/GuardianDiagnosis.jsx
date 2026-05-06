@@ -210,6 +210,14 @@ const GuardianDiagnosis = () => {
             <a href="https://lzsubckt.gensparkspace.com/" target="_blank" rel="noopener noreferrer" className="btn-primary cta-btn">
               月額2,000円〜で、サロンの仲間になる
             </a>
+            
+            <hr className="cta-divider" />
+            
+            <h4>さらに、無料で学びたい方へ💌</h4>
+            <p>『【1日3分読むだけ】あなたの心を「できない自分」から抜け出して、心もお金も自由になる7日間』メール講座</p>
+            <a href="#" target="_blank" rel="noopener noreferrer" className="btn-secondary cta-btn">
+              無料メルマガに登録する
+            </a>
           </div>
         </div>
       </div>
